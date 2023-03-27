@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proofConceptWeb", "proofConcept\proofConceptWeb.csproj", "{6F100752-089D-4AFE-9A94-CE94C0944113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proofConceptDB", "proofConceptDB\proofConceptDB.csproj", "{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F100752-089D-4AFE-9A94-CE94C0944113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F100752-089D-4AFE-9A94-CE94C0944113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F100752-089D-4AFE-9A94-CE94C0944113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F100752-089D-4AFE-9A94-CE94C0944113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65FAD655-11B8-48A8-A7C9-9FAF6A8CCD39}
+	EndGlobalSection
+EndGlobal

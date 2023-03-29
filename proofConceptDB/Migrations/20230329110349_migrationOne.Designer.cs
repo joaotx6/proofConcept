@@ -11,8 +11,8 @@ using proofConceptDB.Context;
 namespace proofConceptDB.Migrations
 {
     [DbContext(typeof(proofConceptContext))]
-    [Migration("20230327112712_migrationZero")]
-    partial class migrationZero
+    [Migration("20230329110349_migrationOne")]
+    partial class migrationOne
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -5,7 +5,7 @@ namespace proofConceptDB.Context
 
     using Microsoft.EntityFrameworkCore;
     using proofConceptDB.DBEntities;
-
+    using System;
 
     public class proofConceptContext : DbContext
     {
@@ -14,5 +14,10 @@ namespace proofConceptDB.Context
             
         }
         public DbSet<Wand> wands { get; set; }
+
+        public void Seed()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

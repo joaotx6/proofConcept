@@ -4,6 +4,7 @@ namespace proofConceptWeb
 {
     using Microsoft.EntityFrameworkCore;
     using proofConceptDB.Context;
+    using proofConceptDB.Data;
 
     public class Program
     {
@@ -23,8 +24,11 @@ namespace proofConceptWeb
             });
 
             //add services:
-            //builder.services.addscoped<>();
-
+            //builder.Services.AddScoped<>();
+            //var services = scope.ServiceProvider;
+            //{
+            //    AppDbInitializer.Seed(services);
+            //}
 
             var app = builder.Build();
 
@@ -47,10 +51,22 @@ namespace proofConceptWeb
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
+            //proofConceptDB.Data.AppDbInitializer.Seed(app);
+            
+
+            AppDbInitializer.Seed(app);
+
+            //void SeedData(IHost app)
+            //{
+            //    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+
+            //    using (var scope = scopedFactory.CreateScope())
+            //    {
+            //        var service = scope.ServiceProvider.GetService<proofConceptContext>();
+            //        service.Seed();
+            //    }
+            //}
             app.Run();
-
-            proofConceptDB.Data.AppDbInitializer.Seed(app);
-
         }
     }
 }

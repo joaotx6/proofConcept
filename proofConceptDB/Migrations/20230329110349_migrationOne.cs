@@ -4,7 +4,7 @@
 
 namespace proofConceptDB.Migrations
 {
-    public partial class migrationZero : Migration
+    public partial class migrationOne : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

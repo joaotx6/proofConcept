@@ -12,18 +12,22 @@ namespace proofConceptDB.Data
 {
     public class AppDbInitializer
     {
-        public static void Seed(IApplicationBuilder applicationBuilder) 
+        public static void Seed(IApplicationBuilder applicationBuilder)
         {
-            using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope()) 
+            try
             {
-                var context = serviceScope.ServiceProvider.GetService<proofConceptDB.Context.proofConceptContext>();
-            
-                context.Database.EnsureCreated();
 
-                //Wands
-                if (!context.wands.Any())
+
+                using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
                 {
-                    context.wands.AddRange(new List<Wand>()
+                    var context = serviceScope.ServiceProvider.GetService<Context.proofConceptContext>();
+
+                    context.Database.EnsureCreated();
+
+                    //Wands
+                    if (!context.wands.Any())
+                    {
+                        context.wands.AddRange(new List<Wand>()
                     {
                         new Wand()
                         {
@@ -50,10 +54,18 @@ namespace proofConceptDB.Data
                             imgUrl = "https://www.worten.pt/i/4dd08137b18b8076af8b9cba80422838a931c462.jpg",
                         },
                     });
-                    context.SaveChanges();
+                        context.AddRange(context.wands);
+                        context.SaveChanges();
 
+                    }
                 }
+
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
     }
 }

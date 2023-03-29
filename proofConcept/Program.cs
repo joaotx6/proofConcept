@@ -18,13 +18,13 @@ namespace proofConceptWeb
 
             builder.Services.AddDbContext<proofConceptContext>(options =>
             {
-            options.UseSqlServer(configuration.GetConnectionString("MainConnectionString"), op =>
-                op.CommandTimeout(Convert.ToInt32(configuration.GetSection("SqlTimeout").Value)));
+                options.UseSqlServer(configuration.GetConnectionString("MainConnectionString"), op =>
+                    op.CommandTimeout(Convert.ToInt32(configuration.GetSection("SqlTimeout").Value)));
             });
 
             //add services:
             //builder.services.addscoped<>();
-            
+
 
             var app = builder.Build();
 
@@ -48,6 +48,9 @@ namespace proofConceptWeb
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
+
+            proofConceptDB.Data.AppDbInitializer.Seed(app);
+
         }
     }
 }

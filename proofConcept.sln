@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proofConceptWeb", "proofConcept\proofConceptWeb.csproj", "{6F100752-089D-4AFE-9A94-CE94C0944113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "proofConceptWeb", "proofConcept\proofConceptWeb.csproj", "{6F100752-089D-4AFE-9A94-CE94C0944113}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proofConceptDB", "proofConceptDB\proofConceptDB.csproj", "{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "proofConceptDB", "proofConceptDB\proofConceptDB.csproj", "{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proofConceptDAL", "proofConceptDAL\proofConceptDAL.csproj", "{EE99FD5C-4E25-4AB5-B563-432AF0B64EB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proofConceptMapper", "proofConceptMapper\proofConceptMapper.csproj", "{BB3B7D93-3DD6-430A-8D1E-F419569FD640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proofConceptViewModel", "proofConceptViewModel\proofConceptViewModel.csproj", "{B08A81F1-A9F1-4219-9C22-8DD6B8825D63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B10F4FBE-A1BD-44BF-BF46-59976AEA21BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE99FD5C-4E25-4AB5-B563-432AF0B64EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE99FD5C-4E25-4AB5-B563-432AF0B64EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE99FD5C-4E25-4AB5-B563-432AF0B64EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE99FD5C-4E25-4AB5-B563-432AF0B64EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3B7D93-3DD6-430A-8D1E-F419569FD640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3B7D93-3DD6-430A-8D1E-F419569FD640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3B7D93-3DD6-430A-8D1E-F419569FD640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3B7D93-3DD6-430A-8D1E-F419569FD640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08A81F1-A9F1-4219-9C22-8DD6B8825D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08A81F1-A9F1-4219-9C22-8DD6B8825D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08A81F1-A9F1-4219-9C22-8DD6B8825D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08A81F1-A9F1-4219-9C22-8DD6B8825D63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

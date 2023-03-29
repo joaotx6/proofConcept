@@ -16,8 +16,6 @@ namespace proofConceptDB.Data
         {
             try
             {
-
-
                 using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
                 {
                     var context = serviceScope.ServiceProvider.GetService<Context.proofConceptContext>();
@@ -59,13 +57,11 @@ namespace proofConceptDB.Data
 
                     }
                 }
-
             }
             catch (Exception ex)
             {
                 throw;
             }
-
         }
     }
 }

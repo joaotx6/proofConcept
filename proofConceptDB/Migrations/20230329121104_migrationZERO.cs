@@ -4,7 +4,7 @@
 
 namespace proofConceptDB.Migrations
 {
-    public partial class migrationOne : Migration
+    public partial class migrationZERO : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,12 +14,12 @@ namespace proofConceptDB.Migrations
                 {
                     wandId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    core = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    wood = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    flexibility = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    length = table.Column<int>(type: "int", nullable: false),
-                    size = table.Column<float>(type: "real", nullable: false),
-                    imgUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    core = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    wood = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    flexibility = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    length = table.Column<int>(type: "int", nullable: true),
+                    size = table.Column<float>(type: "real", nullable: true),
+                    imgUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

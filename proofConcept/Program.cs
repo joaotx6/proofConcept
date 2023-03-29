@@ -3,6 +3,8 @@ namespace proofConceptWeb
 
 {
     using Microsoft.EntityFrameworkCore;
+    using proofConceptDAL.Implementations;
+    using proofConceptDAL.Interfaces;
     using proofConceptDB.Context;
     using proofConceptDB.Data;
 
@@ -24,11 +26,7 @@ namespace proofConceptWeb
             });
 
             //add services:
-            //builder.Services.AddScoped<>();
-            //var services = scope.ServiceProvider;
-            //{
-            //    AppDbInitializer.Seed(services);
-            //}
+            builder.Services.AddScoped<IAWandRepository, wandRepository>();
 
             var app = builder.Build();
 
